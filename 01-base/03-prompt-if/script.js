@@ -14,3 +14,15 @@
   // your code here
 
 })();
+
+
+var answer;
+var answer = prompt ("Est-ce que tu souhaites un petit peu de gâteau ? oui - non");
+
+if (answer == "oui"){
+  alert('Bravo tu es un gourmand huhuhuhu');
+}else{
+  alert('Whats wrong with you?!');
+}
+
+

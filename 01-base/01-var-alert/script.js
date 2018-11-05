@@ -14,3 +14,8 @@
     // your code here
 
 })();
+
+
+var emilie = "Hello, World!";
+
+alert(emilie);

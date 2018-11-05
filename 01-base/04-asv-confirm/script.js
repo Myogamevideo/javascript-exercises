@@ -9,8 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
 (function() {
 
     // your code here
 
 })();
+
+
+do{
+
+    var age = prompt("Quel est ton âge ?");
+    var sexe = prompt("Quel est ton sexe ?");
+    var ville = prompt("De quelle ville viens-tu?");
+
+    alert('Ton âge est ' + age);
+    alert('Ton sexe est ' + sexe);
+    alert('Tu viens de ' + ville);
+
+    var answer = prompt("Correct? oui - non");
+}
+while(answer == "non");

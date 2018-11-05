@@ -14,3 +14,7 @@
     // your code here
 
 })();
+
+var answer
+var answer = prompt ("Quel est ton nom?");
+alert('Bonjour ' + answer);
