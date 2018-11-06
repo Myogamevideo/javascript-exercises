@@ -30,7 +30,7 @@
         var result = a-b;
         alert(result);        
         
-        // perform an substraction
+        // perform a substraction
     });
 
     document.getElementById("multiplication").addEventListener("click", function() {
@@ -40,7 +40,7 @@
         var result = a*b;
         alert(result);
         
-        // perform an multiplication
+        // perform a multiplication
     });
 
     document.getElementById("division").addEventListener("click", function() {
@@ -50,6 +50,6 @@
         var result = a/b;
         alert(result);
         
-        // perform an division
+        // perform a division
     });
 })();

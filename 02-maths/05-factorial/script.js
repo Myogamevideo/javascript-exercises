@@ -11,12 +11,24 @@
 
 (function() {
     
-    // to get the value of an input: document.getElementById("element-id").value
+
+    
+// to get the value of an input: document.getElementById("element-id").value
 
     document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+        var n = document.getElementById("number").value
 
-    });
+        var fact = 1;
 
+        for (var i=1 ; i<=n ; i++){
+    
+            fact=fact*i;
+    
+        }
+        alert('La factorielle de ' + n + ' est ' + fact);
+
+        });
 })();
+
+

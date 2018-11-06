@@ -9,12 +9,33 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+// (function() {
+
+//     document.getElementById("run").addEventListener("click", function() {
+
+//         var int = null;
+
+//         for (var i = 2; i < 21; i=i+2){
+
+//             alert(i*i);
+//         }
+//     });
+
+// })();
+
+
 (function() {
 
-    document.getElementById("run").addEventListener("click", function() {
+document.getElementById("run").addEventListener("click", function() {
 
-        // your code here
+    var text="";
 
-    });
+    for(var i=2 ; i<22 ; i=i+2){
+
+        text=text+(i*i)+" ";
+        
+    }
+    alert(text);
+});
 
 })();
