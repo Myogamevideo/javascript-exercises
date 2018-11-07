@@ -11,6 +11,41 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+    
+        var chosenColor = document.getElementById("color").value;
+
+        console.log(chosenColor);
+
+        document.documentElement.style.backgroundColor = chosenColor;
+
+        });
 
 })();
+
+
+
+// (function() {
+
+//     document.getElementById("red").addEventListener("click", function() {
+    
+//             document.documentElement.style.backgroundColor = "red";
+//     });
+
+//     document.getElementById("green").addEventListener("click", function() {
+    
+//         document.documentElement.style.backgroundColor = "green";
+//     });
+
+//     document.getElementById("yellow").addEventListener("click", function() {
+    
+//         document.documentElement.style.backgroundColor = "yellow";
+//     });
+
+//     document.getElementById("blue").addEventListener("click", function() {
+    
+//         document.documentElement.style.backgroundColor = "blue";
+//     });
+
+
+// })();

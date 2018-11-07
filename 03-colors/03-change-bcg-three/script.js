@@ -10,7 +10,21 @@
 // You will have time to focus on it later.
 
 (function() {
+    
 
-    // your code here
+      document.getElementById("run").addEventListener("click", function() {
+    
+        function random_rgba() {
+            var o = Math.round;
+            var r = Math.random;
+            var s = 255;
+            return'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
+            }           
+            
+        document.documentElement.style.backgroundColor = random_rgba();
+    });
 
 })();
+
+
+
