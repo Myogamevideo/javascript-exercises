@@ -11,8 +11,24 @@
 
 (function() {
 
-    // to change the content of a tag: document.getElementById("element-id").innerHTML = "new-value"
+    var date = new Date();
 
-    // your code here
+    var jours = ['Dimanche','Lundi','Mardi','Mercredi','Jeudi','Vendredi','Samedi'];
 
-})();
+    var mois = ['Janvier','Fevrier','Mars','Avril','Mai','Juin','Juillet','Aout','Septembre','Octobre','Novembre','Décembre'];
+
+    var chiffreJours = date.getDay();
+
+    var jours_txt = jours[chiffreJours];
+
+    var chiffreMois = date.getMonth();
+
+    var mois_txt = mois[chiffreMois];
+
+    var txt = jours_txt + " " + date.getDate() + " " + mois_txt + " " + date.getFullYear() + " " + date.getHours() + "h" + date.getMinutes();
+    
+    document.getElementById("target").innerHTML = txt;
+    
+    })();
+    
+

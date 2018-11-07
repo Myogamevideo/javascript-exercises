@@ -11,6 +11,25 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+
+        var inputDay = document.getElementById("dob-day").value;
+
+        var inputMonth = document.getElementById("dob-month").value;
+
+        var inputYear = document.getElementById("dob-year").value;
+
+        var today = new Date();
+
+        var age = today.getFullYear() - inputYear;
+        if (today.getMonth() < inputMonth || (today.getMonth() == inputMonth && today.getDate() < inputDay)) {
+          age--;
+        }
+        alert(age);
+        
+       // alert("You were born on the : " + inputDay + "/" + inputMonth + "/" + inputYear);
+
+    });
 
 })();
+
