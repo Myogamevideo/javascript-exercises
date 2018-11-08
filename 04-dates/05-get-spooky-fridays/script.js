@@ -11,6 +11,28 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+        var month;
+        var mois = new Array("janvier", "fevrier", "mars", "avril", "mai", "juin", "juillet", "aout", "septembre", "octobre", "novembre", "decembre");
+        var friday13 = "";
+        var inputYear = document.getElementById("year").value;
+
+        for (month = 0 ; month < 12; month++) {
+              
+            //date = new Date(year,month,13,8,0,0);
+            var date = new Date();
+            date.setFullYear(inputYear);
+            date.setMonth(month);
+            date.setDate(13);
+
+                if (date.getDay() == 5) { //si jour est vendredi
+                    friday13 += mois[month]+" "; //la variable affiche ce mois
+                }
+        }
+
+    alert(friday13);
+
+    })
 
 })();
