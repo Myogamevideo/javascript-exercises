@@ -9,6 +9,11 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+//Au clic sur le bouton, affiche (dans la console) l'une après l'autre
+//chaque valeur du tableau fruits. Utilise la méthode map.
+
+
 (function() {
 
     var fruits = [
@@ -25,7 +30,10 @@
         "raisin",
         "cerise",
     ];
-
-    // your code here
-
+    
+    document.getElementById("run").addEventListener("click", function(){
+        const map1 = fruits.map(function(fruit){
+            console.log(fruit);
+        }) 
+    })
 })();

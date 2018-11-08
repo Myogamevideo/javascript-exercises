@@ -9,6 +9,8 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
+
+
 (function() {
 
     var people = [
@@ -89,6 +91,23 @@
         },
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
+
+
+        var position = people.indexOf(people[firstname][Jean]);
+
+        console.log(position);
+        
+
+    })
 
 })();
+
+//To access the "abc" property you'd say myArray[0]["one"]["abc"] or myArray[0].one.abc.
+//This seems kind of clunky and perhaps isn't at all what you want, but as I said it's
+//what you seem to be asking for.
+
+
+//Au clic sur le bouton, affiche (dans la console) l'email de la personne dont le nom est
+//"Dupont" et le prénom "Jean" dans le tableau people.
+//Ensuite, affiche son index dans ce tableau.

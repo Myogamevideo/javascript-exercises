@@ -24,14 +24,16 @@
         "pêche",
         "raisin",
         "cerise",
-    ];
+        ];
 
     document.getElementById("run").addEventListener("click", function(){
 
+        var i=null;
 
+        for (i=0; i<fruits.length; i++){
+            console.log(fruits[i]);
+        }
     });
-
-
 })();
 
 
@@ -46,3 +48,8 @@
 // for (var i = 0; i < dogs.length; i++) {     // parsing with array.length
 //     console.log(dogs[i]);
 // }
+
+
+
+//Au clic sur le bouton, affiche (dans la console) l'une après l'autre chaque valeur
+//du tableau fruits. Utilise une boucle for.
