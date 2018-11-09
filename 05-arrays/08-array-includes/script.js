@@ -26,6 +26,26 @@
         "cerise",
     ];
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function(){
 
+            fruits.find(function(apple){
+                if(apple=="pomme")
+                console.log(apple);
+            });
+    });        
 })();
+
+
+
+
+// Alertinative compliquée et inutile mais qui fonctionne :
+
+// var pomme=[];
+
+// fruits.find(function(apple){
+//     if(apple=="pomme")
+//     pomme.push(apple);
+// });
+
+// console.log(pomme);
+// alert('Petite ' + pomme);
