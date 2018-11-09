@@ -89,6 +89,41 @@
         },
     ];
 
-    // your code here
+
+    document.getElementById("run").addEventListener("click", function(){
+
+        var newA=[];
+        
+        people.find(function(adults){
+            if(adults.age > 18)
+            // console.log(adults.firstname);
+            newA.push(adults);
+        });
+
+        console.log(newA);
+
+    });
+
 
 })();
+
+
+//document.getElementById("run").addEventListener("click", function(){
+    //if age > 18 in tableau people 
+    //Creer nouveau []
+    //Afficher ce nouveau tableau
+//Au clic sur le bouton, crée un nouveau tableau à partir du tableau people,
+//qui ne contiendra que les personnes dont l'âge est supérieur à 18 ans.
+//Affiche le tableau résultant dans la console
+
+
+// people.find(function(personnes){
+    
+//     if(personnes.firstname === "Jean" && personnes.lastname === "Dupont")
+  
+//     console.log(personnes.email);
+//     new Array;
+//     console.log(personnes);
+
+// });
+// });

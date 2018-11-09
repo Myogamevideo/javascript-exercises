@@ -91,23 +91,33 @@
         },
     ];
 
+ 
     document.getElementById("run").addEventListener("click", function(){
 
+      people.find(function(personnes){
 
-        var position = people.indexOf(people[firstname][Jean]);
+            if(personnes.firstname === "Jean" && personnes.lastname === "Dupont")
+          
+            console.log(personnes.email);
 
-        console.log(position);
+        });
         
+    index = people.findIndex(x => x.lastname=="Dupont");
 
-    })
-
+        console.log(index);
+        
+    });
+           
 })();
 
-//To access the "abc" property you'd say myArray[0]["one"]["abc"] or myArray[0].one.abc.
-//This seems kind of clunky and perhaps isn't at all what you want, but as I said it's
-//what you seem to be asking for.
 
+// parcourir le tableaux d'objet-> trouver Jean Dupont .findInArray()
+// si Lastname = Dupont et que firstName = Jean if(LastName === "Dupont" && firstName === Jean){
+// console.log(objetsdutableaus.email)
 
-//Au clic sur le bouton, affiche (dans la console) l'email de la personne dont le nom est
-//"Dupont" et le prénom "Jean" dans le tableau people.
-//Ensuite, affiche son index dans ce tableau.
+// On sait que personnes = jean dupont
+// On veut trouver son index
+
+//}
+// affiche email 
+
