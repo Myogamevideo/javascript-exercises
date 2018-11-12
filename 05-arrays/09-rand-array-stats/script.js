@@ -15,48 +15,57 @@
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
-            
+       
+    var all = [];
+
     document.getElementById("run").addEventListener("click", function(){
 
-            var array = [];
-
+        //BOUCLE ATTRIBUANT RANDOM NUMB
             for(i=0; i<10; i++){
                 var num = document.getElementById("n-" + (i+1)).innerHTML = (getRandomInt(100));
-                
 
-                array.push(num);
-                // var min = Math.min(num);
-
-                // num.find(function(min){
-                    
-                // });
-
-                console.log(array);
-
-                //from now on, I can calculate min, max etc
-
-
+                all[i]=num;
             }
 
+            console.log(all);
+
+    //MIN 
+    all.min = function(all){
+        return Math.min.apply(Math, all);
+    };
+            
+    var minimum = all.min(all);
+
+    document.getElementById("min").innerHTML = minimum;
+
+    //MAX
+    all.max = function(all){
+        return Math.max.apply(Math, all);
+    };
+
+    var maximum = all.max(all);
+
+    document.getElementById("max").innerHTML = maximum;
+
+    //SUM
         
+    var count = 0;
 
+    for(var i = 0; i < all.length; i++) {
+        count = count + all[i];
+    }
 
-    });
+    document.getElementById("sum").innerHTML = count;
+
+    //AVERAGE
+
+    var countAv = (count/all.length);
+
+    document.getElementById("average").innerHTML = countAv;
+
+   });
 
 })();
-
-// var pomme=[];
-
-// fruits.find(function(apple){
-//     if(apple=="pomme")
-//     pomme.push(apple);
-// });
-
-// console.log(pomme);
-// alert('Petite ' + pomme);
-
-
-
 
         // var un = document.getElementById("n-1").innerHTML = (getRandomInt(100));
         // var deux = document.getElementById("n-2").innerHTML = (getRandomInt(100));
@@ -72,20 +81,3 @@
         // var arrayRandom = [un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix];
         // console.log(arrayRandom);
 
-// var array1 = [2, 3, 1];
-
-// console.log(Math.min(...array1));
-// expected output: 1
-
-
-//Au clic sur le bouton, affiche dans les balises prévues les dix éléments d'un
-//tableau de 10 nombres (entre 1 et 100), ainsi que les statistiques suivantes :
-//le plus petit nombre, le plus grand, la somme des nombres et la moyenne de ceux-ci.
-
-
-
-// function getRandomInt(max) {
-//     return Math.floor(Math.random() * Math.floor(max));
-//   }
-  
-//   console.log(getRandomInt(3));
