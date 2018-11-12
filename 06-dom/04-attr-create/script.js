@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    // store valeur "data-image"
+    var span = document.getElementById("source");
+    var attribute = span.getAttribute("data-image");
 
+    console.log(attribute);
+
+    // create <img> in id target that will print it out
+
+
+
+    //delete data-image
 })();
+
+
+alert(align); // shows the value of align for the element with id="div1"
+
+//Récupère la valeur de l'attribut "data-image" de la balise dont l'id est "source".
+//Crée ensuite une balise image dans la balise d'id "target" qui affichera cette valeur.
+//Enfin, supprime la balise source.

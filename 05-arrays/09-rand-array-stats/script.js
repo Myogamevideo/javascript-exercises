@@ -67,17 +67,21 @@
 
 })();
 
-        // var un = document.getElementById("n-1").innerHTML = (getRandomInt(100));
-        // var deux = document.getElementById("n-2").innerHTML = (getRandomInt(100));
-        // var trois = document.getElementById("n-3").innerHTML = (getRandomInt(100));
-        // var quatre = document.getElementById("n-4").innerHTML = (getRandomInt(100));
-        // var cinq = document.getElementById("n-5").innerHTML = (getRandomInt(100));
-        // var six = document.getElementById("n-6").innerHTML = (getRandomInt(100));
-        // var sept = document.getElementById("n-7").innerHTML = (getRandomInt(100));
-        // var huit = document.getElementById("n-8").innerHTML = (getRandomInt(100));
-        // var neuf = document.getElementById("n-9").innerHTML = (getRandomInt(100));
-        // var dix = document.getElementById("n-10").innerHTML = (getRandomInt(100));
 
-        // var arrayRandom = [un, deux, trois, quatre, cinq, six, sept, huit, neuf, dix];
-        // console.log(arrayRandom);
 
+// SHORTER VERSION :
+// (function() {
+//     document.getElementById('run').addEventListener('click', function() {
+//           var randomTen = [];
+//           for (var i=1; i < 11; i++) {
+//               var randomOne = document.getElementById("n-"+i).innerHTML = Math.floor(Math.random()*100) +1;
+//               randomTen.push(randomOne);
+//           }
+//           document.getElementById("min").innerHTML = Math.min(...randomTen);
+//           document.getElementById("max").innerHTML = Math.max(...randomTen);
+//           document.getElementById("sum").innerHTML = randomTen.reduce((a,b) => a + b, 0);
+//           document.getElementById("average").innerHTML = randomTen.reduce((a,b) => (a+b), 0)/randomTen.length;
+//     })
+  
+//   })();
+  

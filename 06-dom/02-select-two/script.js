@@ -11,6 +11,8 @@
 
 (function() {
 
-    // your code here
+    var list = document.getElementsByClassName("target");
+
+    list[0].innerHTML = "owned";
 
 })();

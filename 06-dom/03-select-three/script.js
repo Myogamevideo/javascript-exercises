@@ -9,8 +9,15 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    // your code here
+    var cible = document.getElementsByClassName('target'); //it's a node but not an array
+    var cible2 = Array.from(cible);
+    cible2.map(x => x.innerHTML = 'owned');
+
 
 })();
+        
+
+
+//Sélectionne les balises dont la classe est "target": remplace leurs contenus par "owned".
