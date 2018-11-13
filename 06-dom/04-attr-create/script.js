@@ -11,22 +11,51 @@
 
 (function() {
 
+
     // store valeur "data-image"
     var span = document.getElementById("source");
     var attribute = span.getAttribute("data-image");
 
-    console.log(attribute);
+    console.log(attribute); //prints out http://www.randomkittengenerator.com/cats/rotator.php
 
-    // create <img> in id target that will print it out
+    // CREATE <img> IN ID "TARGET" THAT WILL PRINT OUT THE TAG
 
+    var elem = document.createElement("img");
+    elem.setAttribute("src", attribute);
+    elem.setAttribute("alt", "beautiful kitties");
 
+    console.log(elem); //print out <img src="http://www.randomkittengenerator.com/cats/rotator.php" alt="beautiful kitties">
+
+    document.getElementById("source").appendChild(elem);
 
     //delete data-image
+    console.log(span);
+    document.getElementById('source').removeAttribute('data-image');
+    console.log(span);
+
+    //refresh page and look at cute cats for a while
+    setTimeout(function(){
+        window.location.reload(1);
+    }, 5000);
+
 })();
 
 
-alert(align); // shows the value of align for the element with id="div1"
 
-//Récupère la valeur de l'attribut "data-image" de la balise dont l'id est "source".
+//Récupère la valeur de l'attribut "data-image" de la balise dont l'id est "source". 
 //Crée ensuite une balise image dans la balise d'id "target" qui affichera cette valeur.
 //Enfin, supprime la balise source.
+
+
+// var elem = document.createElement("img");
+// elem.setAttribute("src", "images/hydrangeas.jpg");
+// elem.setAttribute("height", "768");
+// elem.setAttribute("width", "1024");
+// elem.setAttribute("alt", "Flower");
+//document.getElementById("placehere").appendChild(elem);
+
+//elem.src = 'images/hydrangeas.jpg';
+
+//html
+//<div id="placehere">
+

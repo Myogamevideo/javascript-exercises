@@ -11,6 +11,22 @@
 
 (function() {
 
-    // your code here
+    var data_img = document.querySelector('img').getAttribute('data-hover');  
+
+    document.querySelector('img').addEventListener('mouseover', function(){
+
+        document.querySelector('img').setAttribute('src', data_img);
+
+    });
+    
+    console.log(data_img);
 
 })();
+
+//Au survol de l'image, change sa source par celle qui se trouve dans son attribut "data-hover".
+
+/* <section class="material">
+<figure>
+    <img src="../../_shared/img/kiss.svg" alt="Kiss?" data-hover="../../_shared/img/kiss-wink-heart.svg" />
+</figure>
+</section> */

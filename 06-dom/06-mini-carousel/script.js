@@ -19,6 +19,24 @@
         "../../_shared/img/map.svg",
     ];
 
-    // your code here
+    var i = 1;
+
+    document.getElementById("next").addEventListener("click", function() {
+
+        var picture = gallery[i];
+
+        document.querySelector('img').setAttribute('src', picture);
+
+        i++;
+
+        if (i===5){
+        i=1;
+        };
+        
+    });
 
 })();
+
+
+//Au clic sur le bouton, change la source de l'image par celle de l'image
+//suivante dans le tableau gallery. Fais-en une boucle.
