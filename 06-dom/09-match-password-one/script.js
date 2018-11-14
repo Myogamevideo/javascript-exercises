@@ -11,6 +11,28 @@
 
 (function() {
 
-    // your code here
+    document.getElementById("run").addEventListener("click", function() {
+    
+        var inputOne = document.getElementById("pass-one").value;
+
+        var inputTwo = document.getElementById("pass-two").value;
+
+
+        if(inputOne != inputTwo){
+            document.getElementById("pass-one").style.border = "1px solid red";
+            document.getElementById("pass-two").style.border = "1px solid red"; 
+            
+        } else {
+            document.getElementById("pass-two").style.border = "0px"; 
+            document.getElementById("pass-one").style.border = "0px"; 
+        }
+
+        console.log(inputOne,inputTwo);
+
+        });
 
 })();
+
+
+//Au clic sur le bouton, vérifie que les deux mots de passe dans les inputs
+//sont identiques. Si ça n'est pas le cas, colore les bordures des inputs en rouge
