@@ -11,10 +11,8 @@
 
 (function() {
 
-    // your code here
+    var answer = prompt ("Quel est ton nom?");
+    alert('Bonjour, ' + answer);
 
 })();
 
-var answer
-var answer = prompt ("Quel est ton nom?");
-alert('Bonjour ' + answer);

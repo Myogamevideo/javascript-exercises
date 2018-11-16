@@ -25,13 +25,12 @@
         var inputTwo = document.getElementById("pass-two").value;
 
 
-        if(inputOne != inputTwo){
-            document.getElementById("pass-one").style.border = "1px solid red";
-            document.getElementById("pass-two").style.border = "1px solid red"; 
-            
-        } else {
-            document.getElementById("pass-two").style.border = "0px"; 
-            document.getElementById("pass-one").style.border = "0px"; 
+        if(inputOne == inputTwo){
+            document.getElementById("pass-one").className = "";
+            document.getElementById("pass-one").className = "";
+        } else{
+            document.getElementById("pass-one").className = "error";
+            document.getElementById("pass-two").className = "error";
         }
 
         console.log(inputOne,inputTwo);
@@ -39,3 +38,4 @@
         });
 
 })();
+

@@ -9,26 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
-    
+(function () {
 
-    
-// to get the value of an input: document.getElementById("element-id").value
 
-    document.getElementById("run").addEventListener("click", function() {
+
+    // to get the value of an input: document.getElementById("element-id").value
+
+    document.getElementById("run").addEventListener("click", function () {
 
         var n = document.getElementById("number").value
 
         var fact = 1;
 
-        for (var i=1 ; i<=n ; i++){
-    
-            fact=fact*i;
-    
-        }
-        alert('La factorielle de ' + n + ' est ' + fact);
+        for (var i = 1; i <= n; i++) {
 
-        });
+            var fact = fact * i;
+        }
+        
+        alert('La factorielle de ' + n + ' est ' + fact);
+    });
 })();
 
 

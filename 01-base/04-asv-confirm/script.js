@@ -11,23 +11,20 @@
 
 
 
-(function() {
+(function () {
 
-    // your code here
+    do {
+
+        var age = prompt("Quel est ton âge ?");
+        var sexe = prompt("Quel est ton sexe ?");
+        var ville = prompt("De quelle ville viens-tu?");
+
+        alert('Ton âge est ' + age + ', ton sexe est ' + sexe + ', tu viens de ' + ville);
+
+        var answer = prompt("Correct? oui - non");
+    }
+    while (answer == "non" || "No" || "non");
+
 
 })();
 
-
-do{
-
-    var age = prompt("Quel est ton âge ?");
-    var sexe = prompt("Quel est ton sexe ?");
-    var ville = prompt("De quelle ville viens-tu?");
-
-    alert('Ton âge est ' + age);
-    alert('Ton sexe est ' + sexe);
-    alert('Tu viens de ' + ville);
-
-    var answer = prompt("Correct? oui - non");
-}
-while(answer == "non");

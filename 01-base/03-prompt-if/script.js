@@ -11,18 +11,13 @@
 
 (function() {
 
-  // your code here
+  var answer = prompt("Do you want some cake ?");
+  if (answer == "yes" || "y" || "ok" || "yey" || "y"){
+      alert("congratulations!");
+  } else {
+      alert("you can't say no to cake FFS!");
+  }
 
 })();
-
-
-var answer;
-var answer = prompt ("Est-ce que tu souhaites un petit peu de gâteau ? oui - non");
-
-if (answer == "oui"){
-  alert('Bravo tu es un gourmand huhuhuhu');
-}else{
-  alert('Whats wrong with you?!');
-}
 
 

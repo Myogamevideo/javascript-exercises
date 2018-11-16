@@ -9,25 +9,25 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    document.getElementById("red").addEventListener("click", function() {
-    
-            document.documentElement.style.backgroundColor = "red";
+    document.getElementById("red").addEventListener("click", function () {
+
+        document.documentElement.style.backgroundColor = "red";
     });
 
-    document.getElementById("green").addEventListener("click", function() {
-    
+    document.getElementById("green").addEventListener("click", function () {
+
         document.documentElement.style.backgroundColor = "green";
     });
 
-    document.getElementById("yellow").addEventListener("click", function() {
-    
+    document.getElementById("yellow").addEventListener("click", function () {
+
         document.documentElement.style.backgroundColor = "yellow";
     });
 
-    document.getElementById("blue").addEventListener("click", function() {
-    
+    document.getElementById("blue").addEventListener("click", function () {
+
         document.documentElement.style.backgroundColor = "blue";
     });
 

@@ -9,19 +9,22 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
-    for (i=1; i<=100; i++){
-        
-        if (i%15 === 0) {
+    for (i = 1; i <= 100; i++) {
+
+        if (i % 15 === 0) {
             console.log("fizzbuzz");
-          } else if (i%3 === 0) {
-                console.log("fizz");
-          }else if (i%5 === 0) {
+
+        } else if (i % 3 === 0) {
+            console.log("fizz");
+
+        } else if (i % 5 === 0) {
             console.log("buzz");
-        }else{
-        console.log(i);
-      } 
+            
+        } else {
+            console.log(i);
+        }
     }
 
 })();

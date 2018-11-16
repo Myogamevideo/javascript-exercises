@@ -20,7 +20,7 @@
             var s = 255;
             return'rgba(' + o(r()*s) + ',' + o(r()*s) + ',' + o(r()*s) + ',' + r().toFixed(1) + ')';
             }           
-            
+            console.log(random_rgba());
         document.documentElement.style.backgroundColor = random_rgba();
     });
 

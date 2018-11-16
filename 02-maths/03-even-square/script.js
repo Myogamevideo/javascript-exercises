@@ -9,33 +9,41 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-// (function() {
 
-//     document.getElementById("run").addEventListener("click", function() {
 
-//         var int = null;
 
-//         for (var i = 2; i < 21; i=i+2){
+(function () {
 
-//             alert(i*i);
+    document.getElementById("run").addEventListener("click", function () {
+
+        for (var i = 2; i < 22; i++) {
+            if (i % 2 == 0) {
+                var carre = i * i;
+                alert("Le carré de " + i + " est " + carre);
+            };
+        };
+
+    });
+
+})();
+
+
+
+
+
+// (function () {
+
+//     document.getElementById("run").addEventListener("click", function () {
+
+//         var text = "";
+
+//         for (var i = 2; i < 22; i = i + 2) {
+
+//             text = text + (i * i) + " ";
+
 //         }
+
+//         alert(text);
 //     });
 
 // })();
-
-
-(function() {
-
-document.getElementById("run").addEventListener("click", function() {
-
-    var text="";
-
-    for(var i=2 ; i<22 ; i=i+2){
-
-        text=text+(i*i)+" ";
-        
-    }
-    alert(text);
-});
-
-})();

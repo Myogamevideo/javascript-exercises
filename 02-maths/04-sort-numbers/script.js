@@ -13,6 +13,8 @@
 
     var number = document.getElementById("numbers").value
     var split = number.split(', ');
+    console.log(split);
+
     
     document.getElementById("run").addEventListener("click", function() {
     
