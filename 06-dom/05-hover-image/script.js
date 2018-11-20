@@ -18,6 +18,8 @@
         document.querySelector('img').setAttribute('src', data_img);
 
     });
+
+    //faire la même chose avec mouseleave et mettre la source de l'image 
     
     console.log(data_img);
 

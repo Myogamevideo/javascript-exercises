@@ -11,7 +11,7 @@
 
 
 
-(function() {
+(function () {
 
     var people = [
         {
@@ -91,23 +91,23 @@
         },
     ];
 
- 
-    document.getElementById("run").addEventListener("click", function(){
 
-      people.find(function(personnes){
+    document.getElementById("run").addEventListener("click", function () {
 
-            if(personnes.firstname === "Jean" && personnes.lastname === "Dupont")
-          
-            console.log(personnes.email);
+        people.find(function (personnes) {
+
+            if (personnes.firstname === "Jean" && personnes.lastname === "Dupont")
+
+                console.log(personnes.email);
 
         });
-        
-    index = people.findIndex(x => x.lastname=="Dupont");
+
+        index = people.findIndex(x => x.lastname == "Dupont");
 
         console.log(index);
-        
+
     });
-           
+
 })();
 
 

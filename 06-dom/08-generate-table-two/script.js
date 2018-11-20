@@ -15,11 +15,11 @@
 
     var tr, td, val;
 
-    for(var i = 1; i <= 10; i++) {
+    for(let i = 1; i <= 10; i++) {
 
         tr = document.createElement("tr");
 
-        for(var j = 1; j <= 10; j++) {
+        for(let j = 1; j <= 10; j++) {
             
             val = i * j;
             td = document.createElement("td");

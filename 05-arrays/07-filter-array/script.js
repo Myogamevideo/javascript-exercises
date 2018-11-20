@@ -103,10 +103,10 @@
         console.log(newA);
 
     });
-
-
 })();
 
+
+//better way : use filter
 
 //document.getElementById("run").addEventListener("click", function(){
     //if age > 18 in tableau people 

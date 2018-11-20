@@ -27,4 +27,8 @@
 })();
 
 
+//MATH.ROUND
+//console.log(Math.round(5.95), Math.round(5.5), Math.round(5.05));
+// expected output: 6 6 5
+
 

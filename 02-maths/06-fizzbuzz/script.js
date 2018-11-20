@@ -1,4 +1,4 @@
-/* becode/javascript
+/* becode/javascrnumpt
  *
  * /02-maths/06-fizzbuzz/script.js - 2.6: fizzbuzz
  *
@@ -11,19 +11,21 @@
 
 (function () {
 
-    for (i = 1; i <= 100; i++) {
+    var num;
 
-        if (i % 15 === 0) {
-            console.log("fizzbuzz");
+    for (num = 1; num <= 100; num++) {
 
-        } else if (i % 3 === 0) {
-            console.log("fizz");
+        if (num % 15 === 0) {
+            console.log("fizzbuzz " + num);
 
-        } else if (i % 5 === 0) {
-            console.log("buzz");
+        } else if (num % 3 === 0) {
+            console.log("fizz " + num);
+
+        } else if (num % 5 === 0) {
+            console.log("buzz " + num);
             
         } else {
-            console.log(i);
+            console.log(num);
         }
     }
 

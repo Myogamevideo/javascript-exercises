@@ -47,7 +47,7 @@
 
     Array.from(document.querySelectorAll("button.operator")).forEach(function($btn) {
         $btn.addEventListener("click", function() {
-            performOperation($btn.id);
+            performOperation($btn.id); //$ correspond à la notation hongroise (mettre titre var dans le nom de la var - mais ne sert à rien en tant que tel - ici Leny l'utilise pour dire "il s'agit d'un élément du DOM")
         });
     });
 })();

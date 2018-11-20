@@ -39,3 +39,4 @@
 
 })();
 
+//use classList pour ne écraser classes existantes.

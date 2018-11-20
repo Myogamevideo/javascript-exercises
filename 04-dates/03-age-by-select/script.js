@@ -27,8 +27,6 @@
         }
         alert(age);
         
-       // alert("You were born on the : " + inputDay + "/" + inputMonth + "/" + inputYear);
-
     });
 
 })();

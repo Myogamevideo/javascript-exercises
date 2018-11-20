@@ -10,60 +10,60 @@
 // NOTE: don't focus on the existing code structure for now.
 // You will have time to focus on it later.
 
-(function() {
+(function () {
 
     function getRandomInt(max) {
         return Math.floor(Math.random() * Math.floor(max));
     }
-       
+
     var all = [];
 
-    document.getElementById("run").addEventListener("click", function(){
+    document.getElementById("run").addEventListener("click", function () {
 
         //BOUCLE ATTRIBUANT RANDOM NUMB
-            for(i=0; i<10; i++){
-                var num = document.getElementById("n-" + (i+1)).innerHTML = (getRandomInt(100));
+        for (let i = 0; i < 10; i++) {
+            var num = document.getElementById("n-" + (i + 1)).innerHTML = (getRandomInt(100));
 
-                all[i]=num;
-            }
+            all[i] = num;
+        }
 
-            console.log(all);
+        console.log(all);
 
-    //MIN 
-    all.min = function(all){
-        return Math.min.apply(Math, all);
-    };
-            
-    var minimum = all.min(all);
+        //MIN 
+        all.min = function (all) {
+            return Math.min.apply(Math, all);
+        };
 
-    document.getElementById("min").innerHTML = minimum;
+        var minimum = all.min(all);
 
-    //MAX
-    all.max = function(all){
-        return Math.max.apply(Math, all);
-    };
+        document.getElementById("min").innerHTML = minimum;
 
-    var maximum = all.max(all);
+        //MAX
+        all.max = function (all) {
+            return Math.max.apply(Math, all);
+        };
 
-    document.getElementById("max").innerHTML = maximum;
+        var maximum = all.max(all);
 
-    //SUM
-        
-    var count = 0;
+        document.getElementById("max").innerHTML = maximum;
 
-    for(var i = 0; i < all.length; i++) {
-        count = count + all[i];
-    }
+        //SUM
 
-    document.getElementById("sum").innerHTML = count;
+        var count = 0;
 
-    //AVERAGE
+        for (var i = 0; i < all.length; i++) {
+            count = count + all[i];
+        }
 
-    var countAv = (count/all.length);
+        document.getElementById("sum").innerHTML = count;
 
-    document.getElementById("average").innerHTML = countAv;
+        //AVERAGE
 
-   });
+        var countAv = (count / all.length);
+
+        document.getElementById("average").innerHTML = countAv;
+
+    });
 
 })();
 
@@ -82,6 +82,5 @@
 //           document.getElementById("sum").innerHTML = randomTen.reduce((a,b) => a + b, 0);
 //           document.getElementById("average").innerHTML = randomTen.reduce((a,b) => (a+b), 0)/randomTen.length;
 //     })
-  
+
 //   })();
-  
